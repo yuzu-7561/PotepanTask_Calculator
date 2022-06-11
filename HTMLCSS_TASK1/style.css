@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+}
+
+body,h1,h2,p {
+  margin: 0;
+  width: 100%;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+Header {
+  display: inline-block;
+  width: 100%;
+  padding:20px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.HeaderContainer {
+  justify-content: space-between;
+  display: flex;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.HeaderLogoImagePc {
+  height: 20px;
+}
+
+.HeaderLogoImageSp {
+  display: none;
+}
+
+.HeaderLogoLink {
+  display: block;
+  height: 100%;
+}
+
+.HeaderNavContainer {
+  height: 100%;
+}
+
+.HeaderNavHamburger {
+  display: none;
+}
+
+.HeaderNav {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.HeaderNavItem {
+  list-style: none;
+  margin-right: 45px;
+  alignment-baseline: central;
+}
+
+.HeaderNavItem:last-of-type {
+  margin: 0;
+  height: 100%;
+}
+
+.HeaderNavItemLink>span {
+  font-size: 14px;
+  color: black;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  border-radius: 38px;
+}
+
+.HeaderNavItemLinkButton {
+  font-size: 12px;
+  color: white;
+  height: 100%;
+  padding:0 20px;
+  background-color: #f79214;
+  transition: 0.3s;
+}
+
+.HeaderNavItemLinkButton:hover {
+  opacity: 0.5;
+}
+
+.HeaderNavItemLink > span:first-child {
+  font-size: 14px;
+  font-family: 'Lato',sans-serif;
+  height: 17px;
+}
+
+.HeaderNavItemLink > span:last-child {
+  font-size: 10px;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  height: 15px;
+}
+
+main {
+  position: relative;
+  z-index: 0;
+}
+
+.TopPageImage {
+  display: none;
+}
+
+.TopPageContainer {
+  background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+.TopPageContentsContainer {
+  width: fit-content;
+}
+
+.TopPageContents {
+  max-width: 1140px;
+  padding: 0 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TopPageContentsTitle {
+  display: inline-block;
+  width: auto;
+  font-size: 38px;
+  font-family: 'Lato',sans-serif;
+  text-align: center;
+  line-height: 54px
+}
+
+.TopPageContentsImageContainer {
+  /*height: 200px;*/
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.TopPageContentsImage {
+  margin-right: 10px
+}
+
+.TopPageContentsImage:nth-child(2) {
+  width: 40%;
+}
+
+.TopPageContentsImage:last-of-type, .TopPageContentsImage:first-of-type{
+  width:25%;
+}
+
+.TopPageContentsButtonContainer {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TopPageContentsButton {
+  font-weight: 700;
+  font-size: 16px;
+  height: 100%;
+  justify-content: center;
+}
+
+.TopPageContentsButtonContainer a:first-child {
+  width: 306px;
+  background-color: #f79214;
+  color: white;
+  transition: 0.3s;
+  margin-right: 15px;
+}
+
+.TopPageContentsButtonContainer a:last-child {
+  padding: 0 23px;
+  background-color: white;
+  border: solid 1px rgb(224, 224, 224);
+  color: black;
+}
+
+.Annotation {
+  margin-top: 70px;
+  font-size: 12px;
+  color: #a2a2a4;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+.TermsOfServiceLink {
+  color: #a2a2a4;
+}
+
+.About {
+  background-color: #f79214;
+  padding: 44px 0;
+}
+
+.AboutConteiner {
+  max-width: 1040px;
+  display: flex;
+  padding: 0 50px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items :center;
+}
+
+.AboutContents {
+  margin-left: 32px;
+}
+
+.AboutContents>h2,p,a {
+  color: white;
+}
+
+.AboutTitle {
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 34px;
+  letter-spacing: .1em;
+  font-weight: 900;
+}
+
+.AboutTitle>span {
+  font-family: 'Lato',sans-serif;
+}
+
+video {
+  width: 50%;
+}
+
+.AboutText {
+  margin: 10px 0 16px 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.AboutButton {
+  display: flex;
+  font-size: 18px;
+}
+
+.AboutButton>img {
+  margin-right: 5px;
+}
+
+@media screen and (max-width:1080px) {
+  
+  Header, main {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: white;
+  }
+  
+  main {
+    padding-top: 52px;
+  }
+  
+  .HeaderNavHamburger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .HeaderNavHamburger__line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  
+  .HeaderNavHamburger__line:nth-of-type(2) {
+    top:50%;
+  }
+  
+  .HeaderNavHamburger__line:nth-of-type(3) {
+    top:100%;
+  }
+  
+  .HeaderNav {
+    display: none;
+  }
+  
+  .TopPageContainer {
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+
+  Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .HeaderContainer {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+  
+  .HeaderLogoImagePc {
+    display: none;
+  }
+  
+  .HeaderLogoImageSp {
+    display: block;
+    height: 16px;
+  }
+  
+  .TopPageImage {
+    display: block;
+    width: 100%;
+  }
+  
+  .TopPageContainer {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+  
+  main {
+    width: 100%;
+  }
+  
+  .TopPageContents {
+    max-width: none;
+    padding: 0 20px;
+    margin-top: -45vw;
+  }
+  
+  .TopPageContentsContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .TopPageContentsTitle {
+    font-size: 25px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .TopPageContentsImageContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .TopPageContentsImage:last-of-type {
+    margin-right: 0;
+  }
+  
+  .TopPageContentsImage:first-child, .TopPageContentsImage:last-child {
+    width:27.5%;
+  }
+  
+  .TopPageContentsButtonContainer {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .TopPageContentsButtonContainer a:first-child {
+    width: 100%;
+    margin-right: 0;
+    font-weight: normal;
+    font-size:14px;
+  }
+  
+  .TopPageContentsButton:last-of-type {
+    display: none;
+  }
+  
+  .Annotation {
+    margin-top: 20px;
+  }
+  
+  .About {
+    padding: 30px 0;
+  }
+  
+  .AboutConteiner {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  video {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  
+  .AboutTitle {
+    font-size: 30px;
+  }
+  
+  .AboutTitle span {
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+  
+  .AboutContents {
+    margin: 0;
+  }
+  
+}
