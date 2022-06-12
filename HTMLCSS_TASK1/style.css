@@ -143,7 +143,6 @@ main {
 }
 
 .TopPageContentsImageContainer {
-  /*height: 200px;*/
   display: flex;
   margin-top: 15px;
   margin-bottom: 25px;
@@ -168,7 +167,7 @@ main {
 }
 
 .TopPageContentsButton {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   height: 100%;
   justify-content: center;
@@ -192,6 +191,7 @@ main {
 .Annotation {
   margin-top: 70px;
   font-size: 12px;
+  font-weight: 100;
   color: #a2a2a4;
   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 }
@@ -206,7 +206,7 @@ main {
 }
 
 .AboutConteiner {
-  max-width: 1040px;
+  max-width: 1140px;
   display: flex;
   padding: 0 50px;
   margin-left: auto;
@@ -224,9 +224,9 @@ main {
 
 .AboutTitle {
   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
-  font-size: 34px;
+  font-size: 38px;
   letter-spacing: .1em;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .AboutTitle>span {
@@ -252,12 +252,16 @@ video {
   margin-right: 5px;
 }
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width: 1080px) {
   
   Header, main {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     background-color: white;
+  }
+  
+  Header {
+    position: fixed;
   }
   
   main {
@@ -299,7 +303,24 @@ video {
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 1024px) {
+ 
+ .AboutConteiner {
+   flex-direction: column;
+ }
+ 
+ video {
+   width: 75%;
+   margin-bottom: 16px;
+ }
+  
+  .AboutContents {
+    margin-left: 0;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 767px) {
 
   Header {
     padding-top: 15px;
